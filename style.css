@@ -1,0 +1,336 @@
+.about{
+    
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.tekitou{
+    width: 48%;
+    aspect-ratio: 56/45;
+    object-fit: cover;
+    border-radius: 8px;
+}
+body{
+  position: relative;
+}
+.about-text{
+    font-size: 40px;
+}
+.about-job{
+    margin-top: 4px;
+    font-size: 24px;
+}
+.about-text{
+    margin-top: 24px;
+    font-size: 18px;
+}
+.sns{
+    display: flex;
+    margin-top: 24px;
+    gap: 8px;
+}
+.about-name{
+    font-size: 40px;
+}
+.about-caption{
+    padding-top: 40px;
+}
+.skill{
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+.skill h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #12b0b1;
+}
+.skill-content{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.skill-item{
+    width: 23%;
+    margin-bottom: 1%;
+}
+.skill-item img{
+    width: 100%;
+    aspect-ratio: 29/18;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.skill-item span{
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 4px;
+    font-weight: 700;
+}
+.works-title h2{
+    font-size: 40px;
+    font-weight: 80px;
+}
+.works-title{
+    font-size: 24px;
+    max-width: 1200px;
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+}
+.works-list{
+    margin-top: 60px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* 横に並べる */
+    gap: 8%;
+}
+.works-list img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.works{
+    margin-top: 16%
+}
+.works-title::before{
+    content: "works";
+    display: inline-block;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 1;
+    color: #12b0b1;
+    position: absolute;
+    bottom: 5%;
+    left: -20%;
+    z-index: -1; 
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+  }
+  
+  #gnav_btn {
+    position: absolute;
+    width: 100px;
+    height: 52px;
+    top: 40px;
+    right: 50px;
+    z-index: 10000;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    border-radius: 50px;
+  }
+  #gnav_btn span {
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    position: absolute;
+    left: 30px;
+    height: 3px;
+    background-color: #fff;
+    width: 40%;
+  }
+  #gnav_btn span:nth-of-type(1) {
+    top: 15px;
+  }
+  #gnav_btn span:nth-of-type(2) {
+    top: 23px;
+  }
+  #gnav_btn span:nth-of-type(3) {
+    top: 31px;
+  }
+  #gnav_btn:hover {
+    background-color: rgba(27, 45, 122, 0.7);
+    border-color: #12b0b1;
+  }
+  #gnav_btn:hover span {
+    background: #fff;
+  }
+  #gnav_btn.open {
+    border: 1px solid #fff;
+  }
+  #gnav_btn.open span {
+    background: #fff;
+  }
+  #gnav_btn.open span:nth-of-type(1) {
+    top: 18px;
+    left: 32px;
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
+    width: 35%;
+  }
+  #gnav_btn.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  #gnav_btn.open span:nth-of-type(3) {
+    top: 30px;
+    left: 32px;
+    -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+    width: 35%;
+  }
+  #gnav_btn.open:hover span {
+    background: #fff;
+  }
+  
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    color: #fff;
+    height: 100%;
+  }
+  nav::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #555;
+    opacity: 0.9;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    width: 82%;
+    max-width: 1000px;
+    margin: 160px auto 0;
+    line-height: 1.2;
+  }
+
+.header-nav a{
+    display: inline-block;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .5s;
+    /* 変化する時間 */
+}
+.header-nav a:hover{
+    color: blue;
+    }
+    .fv{
+     margin-bottom: 600px;
+
+
+    }
+
+.fv h1{
+    font-size: 100px;
+    color: aquamarine;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serifj;
+    margin-top: -500px;
+}
+
+.about-name{color: #12b0b1;}
+.about-job{color: aquamarine;}
+.about-text{color: darkturquoise;}
+span{color: darkseagreen;}
+.works-title{color: cyan;}
+.fv img{
+    width: 1470px;
+  height: 835px;
+ 
+}
+.fv h4{
+    color: aqua;
+    text-align: center;
+    font-size: 40px;
+}
+.fv h3{
+    color: #fff;
+    text-align: center;
+    font-size:  190px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.right-to-left {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin-left: -30px;
+  margin-top: -40px;
+  position: fixed;
+  top: 10px;
+  height: 900px;
+  
+}
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeUpTrigger{
+        opacity: 0;
+    }
+    .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+/* スマホ版 */
+@media screen and (max-width: 800px) {
+   .about{
+    flex-direction: column;
+   }
+   .about-img{
+    width: 100%;
+   }
+   .about-caption{
+    width: 100%;
+   }
+   .works-title::before{
+    font-size: 100px;
+   }
+}
